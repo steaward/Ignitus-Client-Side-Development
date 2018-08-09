@@ -2,46 +2,26 @@
 {
 	margin-top: 3%;
     margin-bottom: 4%; 
-      width: 50%;
+    width: 50%;
 }
 
 html {
-	box-sizing: border-box;
+	box-sizing: content-box;
 }
 
-.leadership
-{
-	font-size: 13px;
-	margin-top: 15px;
-	letter-spacing: 2px;
-	font-weight: lighter;
-}
 
-._ignitus_intr
-{
-	font-size: 12px;
-	letter-spacing: 1px;
-	margin-top:35px;
-	font-weight: lighter;
-}
-._ignitus_intr_con
-{
-	font-size: 12px;
-	letter-spacing: 1px;
-	margin-top:6px;
-	font-weight: lighter;
-}
 
 .image_style{
-	width: 100%;
-	height: 100%;
+	width: 50%;
+	height: 50%;
 	border-radius: 50%;
+	margin: 15px;
 }
 
 .imag {
 	overflow: hidden;
 	position: relative;
-	cursor: default;
+	cursor: pointer;
 }
 .overlay {
 	position: absolute;
@@ -58,30 +38,37 @@ html {
 	transition: all 0.4s ease-in-out;
 	transform: scale(0);
 }
-.ch-item:hover {
-	border-radius: 50%;
-	box-shadow: 
-		inset 0 0 0 1px rgba(255,255,255,0.1),
-		0 1px 2px rgba(0,0,0,0.1);
-}
-.ch-item:hover .overlay {
-	transform: scale(1);
-	opacity: 1;
-}
+
 .textalign{
 	text-align: center;
 	margin-top: 10px;
 }
 
 .middle{
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
+._team {
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+._disc{
+	font-size: 13px;
+}
+
+._icon a i{
+	color: grey;
+}
+
+._icon a:hover i.fa-linkedin  { color: #0077B5; }
+._icon a:hover i.fa-github   { color: black; }
+._icon a:hover i.fa-facebook   { color: #3B5998; }

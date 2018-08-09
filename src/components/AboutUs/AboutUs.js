@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './aboutus.css';
 import Navigation from '../Navigation/Navigation';
 import Footer from '../Footer/Footer';
+import Team from '../Team/Team';
 
 class AboutUs extends Component {
 
@@ -28,6 +29,8 @@ class AboutUs extends Component {
 				</p>
 			</div> 
         </div>
+
+        <Team/>
            <Footer />  
         </div> 
     )

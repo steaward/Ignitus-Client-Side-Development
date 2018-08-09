@@ -58,7 +58,6 @@ if(this.state.isLoading){
             <CardLayout />
 
             <Contributors />
-            <Team />
             <Partner />
             <Testimonial slides = {Data}/>
             <GetStarted />

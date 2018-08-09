@@ -14,6 +14,7 @@ class CarouselIndicator extends Component {
           }
           onClick={this.props.onClick}/>
       </li>
+
     );
   }
 }
@@ -27,12 +28,16 @@ class CarouselSlide extends Component {
             ? "carousel__slide carousel__slide--active "
             : "carousel__slide"
         }>
-
+        
+        <i class="fa fa-quote-left fa-pull-left"></i>
         <div className="carousel-slide__content"  >{this.props.slide.content}</div>
+
+
 
         <div className = "author-source-container">
           <small className="carousel-slide__source">
           <div>
+
              <strong className="carousel-slide__author">
               {this.props.slide.author}
              </strong>
@@ -40,6 +45,7 @@ class CarouselSlide extends Component {
             {this.props.slide.source}
           </small>
         </div>
+        
       </li>
     );
   }
@@ -153,12 +159,15 @@ class Testimonial extends Component {
   render() {
 
     return (
+
       
       <div className="carousel _bg">
+
         <div>
           <CarouselLeftArrow onClick={e => this.goToPrevSlide(e)} />
         </div>
         <div>
+
           <ul className="carousel__slides container" >
             {this.props.slides.map((slide, index) =>
               <CarouselSlide
